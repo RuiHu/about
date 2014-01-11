@@ -1,0 +1,85 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+@import compass/css3/transition
+@import compass/utilities/general/clearfix
+@import susy
+
+// susy setting
+$total-columns : 8              // a 12-column grid
+$column-width  : 4em            // each column is 4em wide
+$gutter-width  : 1em            // 1em gutters between columns
+$grid-padding  : $gutter-width  // grid-padding equal to gutters
+
+body
+  background-color: #FAFAFA
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica"
+  font-size: 16px
+  line-height: 1.3em
+
+a, a:link, a:visited
+  text-decoration: none
+  color: #006699
+
+a:hover, a:active
+  color: lighten(#006699, 10%)
+
+h1
+  font-size: 2em
+  margin-bottom: 1rem
+  margin-top: 1rem
+
+p
+  margin-bottom: .5em
+
+ul
+  margin-left: 1em
+  list-style-type: disc
+  margin-bottom: .5em
+
+.contact-information ul
+  margin-left: 0
+  list-style-type: none
+  @include clearfix
+
+  li
+    float: left
+    padding: 0 .5em
+    border-right: 1px solid #aaa
+
+    &:first-child
+      padding-left: 0
+
+    &:last-child
+      border-right: none
+
+    a
+      margin-left: .2em
+
+#container
+  opacity: 0
+  margin-top: 1em
+  @include container
+  @include single-transition(opacity, 1.5s, ease, .5s)
+
+  .content
+    @include span-columns(8, 8)
+
+figure
+  float: right
+  margin-top: .5em
+  margin-left: .5em
+
+.projects i
+  opacity: .5
+
+  &:first-of-type
+    margin-left: .5em
+
+  &:hover
+    cursor: default
+    opacity: 1
