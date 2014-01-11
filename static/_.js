@@ -1,4 +1,5 @@
 (function(window, undefined) {
+    // colors based on GitHub
     var language_info = {
         python: {
             name: 'Python',
@@ -19,6 +20,10 @@
         matlab: {
             name: 'Matlab',
             color: '#bb92ac'
+        },
+        css: {
+            name: 'CSS', // actually for Delphi
+            color: '#b0ce4e'
         }
     }
 
