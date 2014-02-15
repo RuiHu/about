@@ -8,3 +8,33 @@ header
 
   ul
     margin-top: 10px
+
+.introduction
+  position: relative
+
+  h1
+    position: absolute
+    left: 1em
+    top: .2em
+
+  figure
+    margin: 1em 0
+
+  figure.small
+    display: none
+
+.projects .languages .badge
+  margin-right: .5em
+
+@media(max-width: 768px)
+  .introduction
+    h1
+      position: static
+
+@media(max-width: 480px)
+  .introduction
+    figure.large
+      display: none
+
+    figure.small
+      display: block

@@ -2,5 +2,4 @@
 .DS_Store
 
 sync
-static/stylesheets
 static/.sass-cache

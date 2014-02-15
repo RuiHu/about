@@ -30,8 +30,11 @@ html
                 .row
                     .col-md-8.col-md-offset-2
                         h1 Jiawei (Kavin) Yao
-                        figure
-                            img(src='static/photo.jpg', width='200', height='200', title='Me at Golden Gate Bridge')
+                        figure.large
+                            img(src='static/me-large.jpg', width='100%', title='Me at Golden Gate Bridge')
+
+                        figure.small
+                            img(src='static/me-small.jpg', width='100%', title='Me at Golden Gate Bridge')
                         p
                             | Hi, here's Jiawei Yao. You can call me Kavin. I write programs to make the world a better place.
                         p
@@ -80,44 +83,36 @@ html
                             thead
                                 tr
                                     th Name
-                                    th Area
                                     th Languages
 
                             tbody
                                 tr(data-languages='coffee')
                                     td
                                         a(href='http://kavinyao.github.io/HTML5-Demos/') starry night simulation
-                                    td Web/HTML5/Canvas
                                     td.languages
                                 tr(data-languages='javascript')
                                     td
                                         a(href='https://github.com/kavinyao/highlight.js') webpage annotator
-                                    td Web/JavaScript
                                     td.languages
                                 tr(data-languages='javascript')
                                     td
                                         a(href='https://github.com/kavinyao/vimperator-plugins') plugins for Vimperator
-                                    td Web/JavaScript
                                     td.languages
                                 tr(data-languages='php coffee css')
                                     td
                                         a(href='https://github.com/kavinyao/WP-Portfolio') WordPress theme
-                                    td Web/WordPress
                                     td.languages
                                 tr(data-languages='python css')
                                     td
                                         a(href='https://github.com/kavinyao/renren-backup') web scraper
-                                    td Web/Scraping
                                     td.languages
                                 tr(data-languages='python')
                                     td
                                         a(href='https://github.com/kavinyao/SKBPR') recommender system
-                                    td Artificial Intelligence/Recommender System
                                     td.languages
                                 tr(data-languages='python matlab')
                                     td
                                         a(href='https://github.com/kavinyao/airplane-recognition') airplane recognization
-                                    td Artificial Intelligence/Computer Vision
                                     td.languages
 
     script(src='static/_.js')
