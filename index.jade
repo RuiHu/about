@@ -1,0 +1,119 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=yes')
+        title Jiawei (Kavin) Yao
+        link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
+        link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', rel='stylesheet')
+
+    body
+        section.content
+            article.contact-information.container
+                ul.row.list-unstyled
+                    li.col-md-2.col-sm-4.col-xs-6
+                        i.fa.fa-file
+                        a(href='static/Resume-Jiawei-Yao.pdf') Resume
+                    li.col-md-2.col-sm-4.col-xs-6
+                        i.fa.fa-envelope
+                        a(href='mailto:kavinyao@gmail.com') Contact Me
+                    li.col-md-2.col-sm-4.col-xs-6
+                        i.fa.fa-rss-square
+                        a(href='http://hackab.it/') Read Me
+                    li.col-md-2.col-sm-4.col-xs-6
+                        i.fa.fa-twitter-square
+                        a(href='https://twitter.com/kavinyao') Follow Me
+                    li.col-md-2.col-sm-4.col-xs-6
+                        i.fa.fa-github
+                        a(href='https://github.com/kavinyao') Fork Me
+                    li.col-md-2.col-sm-4.col-xs-6
+                        i.fa.fa-instagram
+                        a(href='http://instagram.com/kavinyao') See Me
+
+            article.introduction.container
+                h1 Jiawei (Kavin) Yao
+                figure
+                    img(src='static/photo.jpg', width='200', height='200', title='Me at Golden Gate Bridge')
+                p
+                    | Hi, here's Jiawei Yao. You can call me Kavin. I write programs to make the world a better place.
+                p
+                    | I'm currently a CS master student at Stanford University. I'm in the Artificial Intelligence track but I have deep interest in other fields as well.
+                
+                p
+                    | Below is a list of classes I've taken so far:
+                
+                table.table.table-condensed
+                    tr
+                        td CS22
+                        td
+                            a(href='http://www.stanford.edu/class/cs22/') The History and Philosophy of AI
+                    tr
+                        td CS124
+                        td
+                            a(href='http://www.stanford.edu/class/cs124/') From Language to Information (this quarter)
+                    tr
+                        td CS140
+                        td
+                            a(href='http://www.scs.stanford.edu/14wi-cs140/') Operating Systems (this quarter)
+                    tr
+                        td CS147
+                        td
+                            a(href='http://hci.stanford.edu/courses/cs147/2014/') Human Computer Interation (this quarter)
+                    tr
+                        td CS221
+                        td
+                            a(href='http://www.stanford.edu/class/cs221/') Artificial Intelligence: Principles and Techniques
+                    tr
+                        td CS229
+                        td
+                            a(href='http://cs229.stanford.edu/') Machine Learning
+
+                p
+                    | I believe in the web and most of my projects are built on the web platform. My ambition is to become a full-stack developer.
+
+                p Interesting things I've done include:
+                table.table.table-condensed.projects
+                    thead
+                        tr
+                            th Name
+                            th Area
+                            th Languages
+
+                    tbody
+                        tr(data-languages='coffee')
+                            td
+                                a(href='http://kavinyao.github.io/HTML5-Demos/') starry night simulation
+                            td Web/HTML5/Canvas
+                            td.languages
+                        tr(data-languages='javascript')
+                            td
+                                a(href='https://github.com/kavinyao/highlight.js') webpage annotator
+                            td Web/JavaScript
+                            td.languages
+                        tr(data-languages='javascript')
+                            td
+                                a(href='https://github.com/kavinyao/vimperator-plugins') plugins for Vimperator
+                            td Web/JavaScript
+                            td.languages
+                        tr(data-languages='php coffee css')
+                            td
+                                a(href='https://github.com/kavinyao/WP-Portfolio') WordPress theme
+                            td Web/WordPress
+                            td.languages
+                        tr(data-languages='python css')
+                            td
+                                a(href='https://github.com/kavinyao/renren-backup') web scraper
+                            td Web/Scraping
+                            td.languages
+                        tr(data-languages='python')
+                            td
+                                a(href='https://github.com/kavinyao/SKBPR') recommender system
+                            td Artificial Intelligence/Recommender System
+                            td.languages
+                        tr(data-languages='python matlab')
+                            td
+                                a(href='https://github.com/kavinyao/airplane-recognition') airplane recognization
+                            td Artificial Intelligence/Computer Vision
+                            td.languages
+
+    script(src='static/_.js')

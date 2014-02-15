@@ -27,22 +27,19 @@
         }
     }
 
-    show_content = function() {
-    }
-
     window.addEventListener('load', function() {
         // add visualized language information
         var slice = Array.prototype.slice
-        var projects = slice.call(document.querySelectorAll('.projects li'), 0)
+        var projects = slice.call(document.querySelectorAll('.projects tbody tr'), 0)
 
         projects.forEach(function(project) {
             project.dataset.languages.split(' ').forEach(function(lang) {
-                var i = document.createElement('i')
-                i.className = 'fa fa-square'
-                i.title = language_info[lang].name
-                i.style.color = language_info[lang].color
+                var span = document.createElement('span')
+                span.className = 'badge'
+                span.title = span.textContent = language_info[lang].name
+                span.style.backgroundColor = language_info[lang].color
 
-                project.insertBefore(i, null)
+                project.lastChild.insertBefore(span, null)
             })
         })
 
