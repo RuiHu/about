@@ -25,25 +25,25 @@
             name: 'CSS', // actually for Delphi
             color: '#b0ce4e'
         }
-    }
+    };
 
     window.addEventListener('load', function() {
         // add visualized language information
-        var slice = Array.prototype.slice
-        var projects = slice.call(document.querySelectorAll('.projects tbody tr'), 0)
+        var slice = Array.prototype.slice;
+        var projects = slice.call(document.querySelectorAll('.projects tbody tr'), 0);
 
         projects.forEach(function(project) {
             project.dataset.languages.split(' ').forEach(function(lang) {
-                var span = document.createElement('span')
-                span.className = 'badge'
-                span.title = span.textContent = language_info[lang].name
-                span.style.backgroundColor = language_info[lang].color
+                var span = document.createElement('span');
+                span.className = 'badge';
+                span.title = span.textContent = language_info[lang].name;
+                span.style.backgroundColor = language_info[lang].color;
 
-                project.lastChild.insertBefore(span, null)
-            })
-        })
+                project.lastChild.insertBefore(span, null);
+            });
+        });
 
         // show the content, there would be a delay resulted from css transition
-        document.querySelector('#container').style.opacity = 1
-    })
-})(this)
+        document.querySelector('#container').style.opacity = 1;
+    });
+})(this);
