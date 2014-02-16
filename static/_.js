@@ -42,8 +42,5 @@
                 project.lastChild.insertBefore(span, null);
             });
         });
-
-        // show the content, there would be a delay resulted from css transition
-        document.querySelector('#container').style.opacity = 1;
     });
 })(this);
